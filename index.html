@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unlevered Free Cash Flow Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="unleveredfreecashflowRadio" name="variables" checked>
+  <label for="unleveredfreecashflowRadio">Unlevered free cash flow</label>
+
+  <input type="radio" id="EBITRadio" name="variables">
+  <label for="EBITRadio">EBIT</label>
+
+  <input type="radio" id="effectivetaxrateRadio" name="variables">
+  <label for="effectivetaxrateRadio">Effective tax rate</label>
+
+  <input type="radio" id="depreciationandamortizationRadio" name="variables">
+  <label for="depreciationandamortizationRadio">Depreciation and amortization</label>
+
+  <input type="radio" id="capitalexpendituresRadio" name="variables">
+  <label for="capitalexpendituresRadio">Capital expenditures</label>
+
+  <input type="radio" id="netchangeinworkingcapitalRadio" name="variables">
+  <label for="netchangeinworkingcapitalRadio">Net change in working capital</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">EBIT</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">Effective tax rate</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">Depreciation and amortization</label>
+  <input type="number" id="v3"><br><br>
+  
+  <label for="v4" id="variable4">Capital expenditures</label>
+  <input type="number" id="v4"><br><br>
+  
+  <label for="v5" id="variable5">Net change in working capital</label>
+  <input type="number" id="v5"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
